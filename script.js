@@ -7,7 +7,27 @@
    
  
  
- 
+ // main.js
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { SplitText } from "gsap/SplitText";
+import { CustomEase } from "gsap/CustomEase";
+import { CustomBounce } from "gsap/CustomBounce";
+import { CustomWiggle } from "gsap/CustomWiggle";
+
+// Register plugins once
+gsap.registerPlugin(
+  ScrollTrigger,
+  ScrollSmoother,
+  ScrambleTextPlugin,
+  SplitText,
+  CustomEase,
+  CustomBounce,
+  CustomWiggle
+);
+
  
  
 //  // // Toggle sidebar
