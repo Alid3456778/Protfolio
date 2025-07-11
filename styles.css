@@ -5,6 +5,10 @@
         box-sizing: border-box;
       }
 
+      a{
+        text-decoration: none;
+      }
+
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         overflow-x: hidden;
@@ -17,6 +21,192 @@
       html {
         scroll-behavior: smooth;
       }
+
+        /* Hamburger button */
+    .hamburger-btn {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #e6e4df;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1001;
+      transition: background-color 0.3s ease;
+    }
+    .hamburger-btn:hover,
+    .hamburger-btn:focus {
+      background-color: #d4d3ca;
+      outline: none;
+    }
+    /* Hamburger icon lines */
+    .hamburger-icon,
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+      display: block;
+      background-color: #0a0a0a;
+      height: 2.8px;
+      width: 20px;
+      border-radius: 1.5px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    .hamburger-icon::before {
+      top: -7px;
+    }
+    .hamburger-icon::after {
+      top: 7px;
+    }
+    /* Menu overlay */
+    .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .menu-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* Menu container */
+    .menu-container {
+      max-width: 360px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+    .menu-container ul li a{
+      color: white;
+    }
+    /* Navigation links */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      font-size: 3.6rem;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav ul li + li {
+      margin-top: 0.3rem;
+    }
+    nav ul li:hover,
+    nav ul li:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+    /* Contact info */
+    .contact-info {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #b2b2aa;
+      margin-top: 1rem;
+      letter-spacing: 0.03em;
+      font-family: Arial, monospace;
+    }
+    .contact-info .email {
+      font-weight: 400;
+      text-transform: none;
+      font-size: 1rem;
+      margin-bottom: 1.8rem;
+      color: #e6e4df;
+      font-family: monospace;
+      word-break: break-word;
+      user-select: text;
+    }
+    /* Social links text */
+    .contact-info .social {
+      font-weight: 400;
+      font-family: monospace;
+      letter-spacing: normal;
+      text-transform: none;
+      color: #d1d1c7;
+      user-select: text;
+    }
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: -60px;
+      width: 56px;
+      height: 56px;
+      background-color: #e6e4df;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.23));
+    }
+    .close-btn:hover,
+    .close-btn:focus {
+      background-color: #d4d3ca;
+      outline: none;
+    }
+    .close-btn svg {
+      width: 24px;
+      height: 24px;
+      stroke: #0a0a0a;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    /* Responsive note: center menu content horizontally and vertically on smaller widths */
+    @media (max-width: 450px) {
+      .menu-container {
+        max-width: 100%;
+        padding: 0 1rem;
+        text-align: left;
+      }
+      nav ul li {
+        font-size: 2.8rem;
+      }
+      .close-btn {
+        right: 16px;
+        top: 16px;
+      }
+    }
+    .hamburger-menu {
+    display: none; /* Hidden by default */
+}
+.hamburger-menu.open {
+    display: block; /* Shown when class is added */
+}
 
       /* Hero Section */
       .hero-section {
@@ -1844,3 +2034,43 @@
   cursor: not-allowed;
 }
     
+
+
+/* The circle cursor */
+  .circle-cursor {
+    pointer-events: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(200, 200, 255, 0.6);
+    background-color: rgba(200, 200, 255, 0.15);
+    backdrop-filter: blur(6px);
+    transform: translate(-50%, -50%) scale(1);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    mix-blend-mode: difference;
+    z-index: 10000;
+  }
+
+/* Expanded state */
+  .circle-cursor.expand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 255, 0.3);
+    border-color: rgba(200, 200, 255, 0.9);
+    color: #fff;
+  }
+
+  /* Additional descriptive text */
+  .instructions {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #aaa;
+  }
