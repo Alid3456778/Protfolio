@@ -2074,3 +2074,17 @@
     text-align: center;
     color: #aaa;
   }
+
+
+  @media (max-width: 480px){
+    .circle-cursor {
+      display: none;
+    }
+    .circle-cursor.expand {
+      width: 80px;
+      height: 80px;
+    }
+    .instructions {
+      font-size: 1rem;
+    }
+  }
