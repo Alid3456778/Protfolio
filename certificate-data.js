@@ -1,0 +1,51 @@
+window.certificatesData = [
+  {
+    id: 1,
+    title: "Fundamentals of Full Stack Development",
+    issuer: "Excelr",
+    date: "Janaury 2024",
+    description:
+      "Comprehensive certification covering modern web development technologies including React, Node.js, and database management.",
+    skills: ["HTML", "CSS", "Database", "JS"],
+    link: "https://drive.google.com/file/d/1BlK4xHw3XJP0Aas43xgIrCj8OEe1IQw6/view?usp=sharing",
+  },
+  {
+    id: 2,
+    title: "Artificial Intelligence and Machine Learning",
+    issuer: "Excelr",
+    date: "December 202",
+    description:
+      "Advanced machine learning course covering supervised and unsupervised learning, neural networks, and deep learning.",
+    skills: ["Python", "ML", "Neural Networks"],
+    link: "https://drive.google.com/file/d/1ihIgIP1U_xvwGXY--RmLWrYoW1u5bjH4/view?usp=sharing",
+  },
+  {
+    id: 3,
+    title: "DevOps for Web Devlopment",
+    issuer: "AWS community Builders",
+    date: "October 2024",
+    description:
+      "Foundation and Fundamental about DevOps and how can we use in the Websitw Devlopment",
+    skills: ["Basics Of DevOps", "Git and GitHub", "Web Dev", "Git Action"],
+    link: "https://drive.google.com/file/d/1LX1CPZAT5MJpvslATnZQZEShKYg9mb60/view?usp=sharing",
+  },
+  {
+    id: 4,
+    title: "Project Excellence Mastering",
+    issuer: "Excelr",
+    date: "Augest 2024",
+    description: "A Deep understanding about te Project and It's Handling",
+    skills: ["Team Work", "Task Distribution"],
+    link: "https://drive.google.com/file/d/1_LPG0pPX_d4ydBLrJOkLl3V7NTex_rhK/view?usp=sharing",
+  },
+  {
+    id: 5,
+    title: "Git, GitHub",
+    issuer: "Udemy",
+    date: "Janaury 2024",
+    description:
+      "All about the Git and GitHub and how to use Version control for upscaling",
+    skills: ["Terminal", "Git Commands", "Code Syncronisation"],
+    link: "https://drive.google.com/file/d/19OHWFfDBvBz4e8s_KRTvrqC1t3BTjrcq/view?usp=sharing",
+  },
+];

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Spam Detection MLOps Pipeline",
+    "image": "./Image/imprttant/Project1.png",
+    "alt": "End-to-End Spam Detection MLOps Pipeline",
+    "description": "Developed a production-ready NLP classifier with a full MLOps lifecycle. Implemented <strong>DVC</strong> for data versioning and <strong>MLflow</strong> for experiment tracking and model registry. The system features a high-performance <strong>FastAPI</strong> backend providing real-time inference for spam classification.",
+    "tech": ["FastAPI", "MLflow", "DVC", "Python", "Scikit-Learn"],
+    "link": "https://spam-mlops-project.onrender.com/docs"
+  },
+  {
+    "title": "Tours & Travelling Managment System",
+    "image": "./Image/imprttant/Screenshot 2024-12-13 171036-11.png",
+    "alt": "Tours & Travelling Managment System",
+    "description": "*A Website where people can book Tours Package , The packages is save and can be modified as per need . *Created with Node , Express , Mongo",
+    "tech": ["EJS", "Node.js", "MongoDB"],
+    "link": "https://propperty-1.onrender.com"
+  },
+  {
+    "title": "Spam Detection",
+    "image": "./Image/imprttant/Screenshot 2024-12-13 171722--11-1.png",
+    "alt": "Spam Detection",
+    "description": "*A Wesite which is use to Show latest NEWS and Headline of now a day's . *It is create with PHP and API's",
+    "tech": ["PHP", "HTML", "CS", "API"],
+    "link": "http://rangoko.42web.io/a/index.html"
+  },
+  {
+    "title": "Parking management Systen",
+    "image": "./Image/imprttant/parking.jpg",
+    "alt": "Parking management Systen",
+    "description": "Created a Parking Managment System for My college , in which it Uses the Barcode Scanner to get the vehical data and Set it into the Database . From this project i have an hands on experience with the Barcode , and How to use it",
+    "tech": ["EJS", "MongoDB", "Mongo Atlas", "Node.js"],
+    "link": "https://parkingsystem-y0d3.onrender.com/"
+  },
+  {
+    "title": "Hand Gesture's",
+    "image": "./Image/imprttant/handGesture.jpg",
+    "alt": "Hand Gesture's",
+    "description": "I sees the Hand Guesture and Show's which sign has been showing to the screen ,It uses the MediaPipe Library to detects the hand sign , It gives me an good under standing of how to use Libraries and adapt the Chnage's",
+    "tech": ["HTMl", "MediaPipe Library", "CSS", "JS"],
+    "link": "https://alid3456778.github.io/HandSign/"
+  },
+  {
+    "title": "Task Manager (DevOps Practices)",
+    "image": "./Image/imprttant/taskmanager.jpg",
+    "alt": "Task Manager (DevOps Practices)",
+    "description": "In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.",
+    "tech": ["CI CD (Git Action)", "Docker", "Deployment", "Node", "Expres"],
+    "link": "https://task-manager-devops-7e1j.onrender.com/"
+  }
+]

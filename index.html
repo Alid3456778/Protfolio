@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALidShaikh's</title>
-    <meta name="description" content="Portfolio of ALid Shaikh, a creative developer and designer specializing in web development and software solutions." />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta
+      name="description"
+      content="Portfolio of ALid Shaikh, a creative developer and designer specializing in web development and software solutions."
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -16,9 +19,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <!-- <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrambleTextPlugin.min.js"></script>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -32,104 +35,119 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- <script src="script.js" type="module"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
-    
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <!-- <div class="circle-cursor" id="circleCursor" aria-hidden="true" ></div> -->
 
+    <button
+      class="hamburger-btn"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="menu"
+    >
+      <span class="hamburger-icon"></span>
+    </button>
 
-
-
-
-    
-    <button class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-    <span class="hamburger-icon"></span>
-  </button>
-
-  <!-- Menu Overlay -->
-  <aside class="menu-overlay" id="menu" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="menu-container">
-      <nav>
-        <ul>
-          <li tabindex="0"><a href="#home" onclick="closeMenu()">HOME</a></li>
-          <li tabindex="0"> <a href="#aboutus" onclick="closeMenu()">ABOUT</a> </li>
-          <li tabindex="0"><a href="#project" onclick="closeMenu()">PROJECT</a></li>
-          <li tabindex="0"><a href="#certificate" onclick="closeMenu()">CERTIFICATE</a></li>
-          <li tabindex="0"><a href="#skill" onclick="closeMenu()">SKILL</a></li>
-          <li tabindex="0"><a href="#contactus" onclick="closeMenu()">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="contact-info">
-        <div>EMAIL ADDRESS</div>
-        <div class="email">alidshaikh05@gmail.com</div>
+    <!-- Menu Overlay -->
+    <aside
+      class="menu-overlay"
+      id="menu"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="menu-container">
+        <nav>
+          <ul>
+            <li tabindex="0"><a href="#home" onclick="closeMenu()">HOME</a></li>
+            <li tabindex="0">
+              <a href="#aboutus" onclick="closeMenu()">ABOUT</a>
+            </li>
+            <li tabindex="0">
+              <a href="#project" onclick="closeMenu()">PROJECT</a>
+            </li>
+            <li tabindex="0">
+              <a href="#certificate" onclick="closeMenu()">CERTIFICATE</a>
+            </li>
+            <li tabindex="0">
+              <a href="#skill" onclick="closeMenu()">SKILL</a>
+            </li>
+            <li tabindex="0">
+              <a href="#contactus" onclick="closeMenu()">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <div>EMAIL ADDRESS</div>
+          <div class="email">alidshaikh05@gmail.com</div>
+        </div>
+        <button class="close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
-      <button class="close-btn" aria-label="Close menu">
-        <svg viewBox="0 0 24 24" fill="none" >
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-  </aside>
+    </aside>
 
-  <script>
-    const hamburgerButton = document.querySelector('.hamburger-btn');
-    const menuOverlay = document.querySelector('.menu-overlay');
-    const closeButton = document.querySelector('.close-btn');
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger-btn");
+      const menuOverlay = document.querySelector(".menu-overlay");
+      const closeButton = document.querySelector(".close-btn");
 
-    function openMenu() {
-      menuOverlay.classList.add('active');
-      menuOverlay.setAttribute('aria-hidden', 'false');
-      hamburgerButton.setAttribute('aria-expanded', 'true');
-      // Lock scroll
-      document.body.style.overflow = 'hidden';
-      // Focus first menu link
-      const firstLink = menuOverlay.querySelector('nav ul li');
-      firstLink?.focus();
-      const menu = document.getElementById('hamburger-menu');
-    menu.style.display = 'block';
-    }
-
-    function closeMenu() {
-      menuOverlay.classList.remove('active');
-      menuOverlay.setAttribute('aria-hidden', 'true');
-      hamburgerButton.setAttribute('aria-expanded', 'false');
-      // Unlock scroll
-      document.body.style.overflow = '';
-      // Return focus to hamburger button
-      hamburgerButton.focus();
-      const menu = document.getElementById('hamburger-menu');
-      menu.style.display = 'none'; 
-    }
-
-    hamburgerButton.addEventListener('click', () => {
-      if (menuOverlay.classList.contains('active')) {
-        closeMenu();
-      } else {
-        openMenu();
+      function openMenu() {
+        menuOverlay.classList.add("active");
+        menuOverlay.setAttribute("aria-hidden", "false");
+        hamburgerButton.setAttribute("aria-expanded", "true");
+        // Lock scroll
+        document.body.style.overflow = "hidden";
+        // Focus first menu link
+        const firstLink = menuOverlay.querySelector("nav ul li");
+        firstLink?.focus();
+        const menu = document.getElementById("hamburger-menu");
+        menu.style.display = "block";
       }
-    });
 
-    closeButton.addEventListener('click', closeMenu);
-
-    // Close menu with ESC key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
-        closeMenu();
+      function closeMenu() {
+        menuOverlay.classList.remove("active");
+        menuOverlay.setAttribute("aria-hidden", "true");
+        hamburgerButton.setAttribute("aria-expanded", "false");
+        // Unlock scroll
+        document.body.style.overflow = "";
+        // Return focus to hamburger button
+        hamburgerButton.focus();
+        const menu = document.getElementById("hamburger-menu");
+        menu.style.display = "none";
       }
-    });
 
-    // Optional: Close menu when clicking outside menu container on overlay
-    menuOverlay.addEventListener('click', (e) => {
-      if (e.target === menuOverlay) {
-        closeMenu();
-      }
-    });
-  </script>
+      hamburgerButton.addEventListener("click", () => {
+        if (menuOverlay.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      closeButton.addEventListener("click", closeMenu);
+
+      // Close menu with ESC key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && menuOverlay.classList.contains("active")) {
+          closeMenu();
+        }
+      });
+
+      // Optional: Close menu when clicking outside menu container on overlay
+      menuOverlay.addEventListener("click", (e) => {
+        if (e.target === menuOverlay) {
+          closeMenu();
+        }
+      });
+    </script>
     <div class="scroll-progress">
       <div class="scroll-progress-bar" id="progressBar"></div>
     </div>
@@ -152,7 +170,7 @@
       </div>
 
       <!-- Main Name -->
-      <h1 class="hero-name" id="heroName" >ALid Shaikh</h1>
+      <h1 class="hero-name" id="heroName">ALid Shaikh</h1>
 
       <!-- Subtitle -->
       <p class="hero-subtitle">Creative Developer & Designer</p>
@@ -171,10 +189,20 @@
       <div class="next-content">
         <h2 class="animate-title">About Me</h2>
         <p class="animate-text">
-          Hi, I’m Alid, a passionate Web Developer and software Developer. Based in Pune, India, I love transforming complex problems into simple, functional, and visually appealing solutions. With expertise in technologies like " Node.js, Express.js, MongoDB, and JavaScript, ".
+          Hi, I’m Alid, a Passionate Developer and Architecture who Bridging the
+          Gap between Code, Data, and Deployment. . Based in Pune, India, I love
+          transforming complex problems into simple, functional, and visually
+          appealing solutions.
         </p>
-        <a href="#project" class="cta-button animate-button"   id="hoverArea">View My Work</a>
-        <a href="https://drive.google.com/file/d/10p2J8F97ZJISCname84MrFEj_zYKOb0m/view?usp=sharing" class="cta-button animate-button"  id="hoverArea" >View My Resume</a>
+        <a href="project.html" class="cta-button animate-button" id="hoverArea"
+          >View My Work</a
+        >
+        <a
+          href="https://drive.google.com/file/d/10p2J8F97ZJISCname84MrFEj_zYKOb0m/view?usp=sharing"
+          class="cta-button animate-button"
+          id="hoverArea"
+          >View My Resume</a
+        >
       </div>
     </section>
 
@@ -184,32 +212,23 @@
       <div class="deco-circle circle-2"></div>
 
       <!-- Horizontal scrolling content -->
-      <div class="sector-content" >
+      <div class="sector-content">
         <div class="panel">
-          <h2 class="title-t">Creative Development</h2>
-          <p class="text-t" >
-            Crafting immersive digital experiences with cutting-edge web
-            technologies. Specializing in interactive front-end solutions that
-            engage and captivate users.
+          <h2 class="title-t">DevOps & MLOps</h2>
+          <p class="text-t">
+            High-performance infrastructure and automated model lifecycles.
+            Building scalable CI/CD pipelines and robust environments to bridge
+            the gap between development and production.
           </p>
         </div>
 
         <div class="panel">
-          <h2 class="title-t">UI/UX Design</h2>
+          <h2 class="title-t">Intelligent Automation</h2>
           <p class="text-t">
-            Human-centered design approach with meticulous attention to detail.
-            Creating intuitive interfaces that deliver exceptional user
-            experiences.
+            Architecting self-healing systems and automated data pipelines.
+            Scaling complex operations through programmatic orchestration and
+            proactive monitoring.
           </p>
-        </div>
-
-        <div class="panel">
-          <h2 class="title-t">Technical Excellence</h2>
-          <p class="text-t">
-            Robust, scalable solutions built with modern frameworks and best
-            practices. Performance optimized code that stands the test of time.
-          </p>
-          <a href="#skill" class="cta-button animate-button"  id="hoverArea">See Certificates</a>
         </div>
 
         <div class="panel">
@@ -218,7 +237,9 @@
             Partnering with clients to transform visions into reality. Clear
             communication and transparent workflows ensure success.
           </p>
-          <a href="#contactus" class="cta-button animate-button"  id="hoverArea">Get In Touch</a>
+          <a href="#contactus" class="cta-button animate-button" id="hoverArea"
+            >Get In Touch</a
+          >
         </div>
       </div>
 
@@ -305,7 +326,7 @@
                 scrub: 1,
                 once: true,
               },
-            }
+            },
           );
 
           gsap.fromTo(
@@ -327,7 +348,7 @@
                 toggleActions: "play none none none",
                 once: true,
               },
-            }
+            },
           );
 
           gsap.fromTo(
@@ -351,7 +372,7 @@
                 toggleActions: "play none none none",
                 once: true,
               },
-            }
+            },
           );
 
           // Hover animations
@@ -388,6 +409,11 @@
           <div class="skills-category" aria-label="Languages and Tools">
             <strong>Languages<br />& Tools</strong>
             <ul>
+              <li class="pint">Docker</li>
+              <li class="pint">Ymal</li>
+              <li class="pint">DVC</li>
+              <li class="pint">MLFlow</li>
+              <li class="pint">FastAPI</li>
               <li class="pint">Python</li>
               <li class="pint">SQL</li>
               <li class="pint">C++</li>
@@ -396,8 +422,6 @@
               <li class="pint">JavaScript</li>
               <li class="pint">Git</li>
               <li class="pint">Postman</li>
-              <li class="pint">Docker</li>
-              <li class="pint">Firebase</li>
             </ul>
           </div>
           <div class="skills-category" aria-label="Frameworks and Libraries">
@@ -431,7 +455,6 @@
     <script>
       // Register GSAP ScrollTrigger plugin
       gsap.registerPlugin(ScrollTrigger);
-          
 
       // Split text function
       function splitText(element) {
@@ -476,7 +499,7 @@
                 end: "bottom 20%",
                 toggleActions: "play none none reverse",
               },
-            }
+            },
           );
         });
 
@@ -504,7 +527,7 @@
                 end: "bottom 20%",
                 toggleActions: "play none none reverse",
               },
-            }
+            },
           );
         });
 
@@ -529,7 +552,7 @@
                 end: "bottom 20%",
                 toggleActions: "play none none reverse",
               },
-            }
+            },
           );
         });
 
@@ -575,7 +598,7 @@
                   duration: 1.5,
                   delay: i * 0.05,
                   ease: "power3.out",
-                }
+                },
               );
             });
           },
@@ -627,7 +650,7 @@
             duration: 1.5,
             ease: "power3.out",
             delay: 0.5,
-          }
+          },
         );
       });
     </script>
@@ -646,10 +669,82 @@
             <span class="char">S</span>
           </h2>
 
+          <div class="project-item">
+            <div class="project-number" data-number="5">
+              <div class="number">01</div>
+            </div>
+            <div class="project-details">
+              <div class="project-image">
+                <img
+                  src="./Image/imprttant/taskmanager.jpg"
+                  alt="Task Manager (DevOps Practices)"
+                />
+              </div>
+              <h3 class="project-title">Task Manager (DevOps Practices)</h3>
+              <p class="project-description">
+                In this project, I built a Task Manager web application
+                following DevOps best practices. The app allows users to create,
+                update, and track tasks efficiently. It features automated
+                deployment pipelines, containerization with Docker, and CI/CD
+                integration using GitHub Actions. Technologies used include
+                Node.js, Express.js, MongoDB, and Docker.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">CI CD (Git Action)</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Deployment</span>
+                <span class="tech-tag">Node</span>
+                <span class="tech-tag">Expres</span>
+              </div>
+              <a
+                href="https://task-manager-devops-7e1j.onrender.com/"
+                class="project-link"
+                id="hoverArea"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-number" data-number="4">
+              <div class="number">02</div>
+            </div>
+            <div class="project-details">
+              <div class="project-image">
+                <img
+                  src="./Image/imprttant/Project1.png"
+                  alt="End-to-End Spam Detection MLOps Pipeline"
+                />
+              </div>
+              <h3 class="project-title">Spam Detection MLOps Pipeline</h3>
+              <p class="project-description">
+                Developed a production-ready NLP classifier with a full MLOps
+                lifecycle. Implemented <strong>DVC</strong> for data versioning
+                and <strong>MLflow</strong> for experiment tracking and model
+                registry. The system features a high-performance
+                <strong>FastAPI</strong> backend providing real-time inference
+                for spam classification.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">MLflow</span>
+                <span class="tech-tag">DVC</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+              </div>
+              <a
+                href="https://spam-mlops-project.onrender.com/docs"
+                class="project-link"
+                id="hoverArea"
+                >View Project</a
+              >
+            </div>
+          </div>
+
           <!-- Project 1 -->
           <div class="project-item">
             <div class="project-number" data-number="1">
-              <div class="number">01</div>
+              <div class="number">03</div>
             </div>
             <div class="project-details">
               <div class="project-image">
@@ -660,123 +755,31 @@
               </div>
               <h3 class="project-title">Tours & Travelling Managment System</h3>
               <p class="project-description">
-                *A Website where people can book Tours Package , The packages is save and can be modified as per need .
-*Created with Node , Express , Mongo
+                A Website where people can book Tours Package , The packages is
+                save and can be modified as per need . Created with Node ,
+                Express , Mongo
               </p>
               <div class="project-tech">
                 <span class="tech-tag">EJS</span>
                 <span class="tech-tag">Node.js</span>
                 <span class="tech-tag">MongoDB</span>
               </div>
-              <a href="http://propperty.onrender.com/" class="project-link"  id="hoverArea">View Project</a>
+              <a
+                href="https://propperty-1.onrender.com"
+                class="project-link"
+                id="hoverArea"
+                >View Project</a
+              >
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div class="project-item">
-            <div class="project-number" data-number="2">
-              <div class="number">02</div>
-            </div>
-            <div class="project-details">
-              <div class="project-image">
-                <img
-                  src="./Image/imprttant/Screenshot 2024-12-13 171722--11-1.png"
-                  alt="Data Analytics Dashboard"
-                />
-              </div>
-              <h3 class="project-title">NEWS Website</h3>
-              <p class="project-description">*A Wesite which is use to Show latest NEWS and Headline of now a day's .
-*It is create with PHP and API's
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CS</span>
-                <span class="tech-tag">API</span>
-              </div>
-              <a href="http://rangoko.42web.io/a/index.html" class="project-link"  id="hoverArea">View Project</a>
-            </div>
-          </div>
+        
 
-          <!-- Project 3 -->
-          <div class="project-item">
-            <div class="project-number" data-number="3">
-              <div class="number">03</div>
-            </div>
-            <div class="project-details">
-              <div class="project-image">
-                <img
-                  src="./Image/imprttant/parking.jpg"
-                  alt="Parking management Systen"
-                />
-              </div>
-              <h3 class="project-title">Parking management Systen</h3>
-              <p class="project-description">Created a Parking Managment System for My college , in which it Uses the Barcode Scanner to get the vehical data and Set it into the Database . From this project i have an hands on experience with the Barcode , and How to use it
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">EJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Mongo Atlas</span>
-                <span class="tech-tag">Node.js</span>
-              </div>
-              <a href="https://parkingsystem-y0d3.onrender.com/" class="project-link"  id="hoverArea" >View Project</a>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-item">
-            <div class="project-number" data-number="4">
-              <div class="number">04</div>
-            </div>
-            <div class="project-details">
-              <div class="project-image">
-                <img
-                  src="./Image/imprttant/handGesture.jpg"
-                  alt="Hand Gesture's"
-                />
-              </div>
-              <h3 class="project-title">Hand Gesture's</h3>
-              <p class="project-description">I sees the Hand Guesture and Show's which sign has been showing to the screen ,It uses the MediaPipe Library to detects the hand sign , It gives me an good under standing of how to use Libraries and adapt the Chnage's
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">HTMl</span>
-                <span class="tech-tag">MediaPipe Library</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JS</span>
-              </div>
-              <a href="https://alid3456778.github.io/HandSign/" class="project-link"  id="hoverArea">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-            <div class="project-number" data-number="4">
-              <div class="number">05</div>
-            </div>
-            <div class="project-details">
-              <div class="project-image">
-                <img
-                  src="./Image/imprttant/taskmanager.jpg"
-                  alt="Hand Gesture's"
-                />
-              </div>
-              <h3 class="project-title">Task Manager (DevOps Practices)</h3>
-              <p class="project-description">In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.
-                
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">CI CD (Git Action)</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Deployment</span>
-                <span class="tech-tag">Node</span>
-                <span class="tech-tag">Expres</span>
-              </div>
-              <a href="https://task-manager-devops-7e1j.onrender.com/" class="project-link"  id="hoverArea">View Project</a>
-            </div>
+          <div class="projects-actions">
+            <a href="project.html" class="project-link">See All</a>
           </div>
         </div>
       </section>
-
     </div>
 
     <script>
@@ -830,7 +833,7 @@
                 className: "project-number active",
                 duration: 0.3,
               },
-              "-=0.8"
+              "-=0.8",
             );
 
           // Parallax effect for project details
@@ -961,7 +964,7 @@
           <!-- Certificate 1 -->
           <div class="certificate-card" data-cert="1">
             <div class="cert-icon"></div>
-            <h3 class="cert-title">Fundamentals of Full Stack Development </h3>
+            <h3 class="cert-title">Fundamentals of Full Stack Development</h3>
             <div class="cert-issuer">Excelr</div>
             <div class="cert-date">Janaury 2024</div>
             <p class="cert-description">
@@ -975,14 +978,21 @@
               <span class="skill-tag">JS</span>
             </div>
             <div class="cert-actions">
-              <a href="https://drive.google.com/file/d/1BlK4xHw3XJP0Aas43xgIrCj8OEe1IQw6/view?usp=sharing" class="cert-button"  id="hoverArea">View Certificate</a>
+              <a
+                href="https://drive.google.com/file/d/1BlK4xHw3XJP0Aas43xgIrCj8OEe1IQw6/view?usp=sharing"
+                class="cert-button"
+                id="hoverArea"
+                >View Certificate</a
+              >
             </div>
           </div>
 
           <!-- Certificate 2 -->
           <div class="certificate-card" data-cert="2">
             <div class="cert-icon"></div>
-            <h3 class="cert-title">Artificial Intelligence and Machine Learning</h3>
+            <h3 class="cert-title">
+              Artificial Intelligence and Machine Learning
+            </h3>
             <div class="cert-issuer">Excelr</div>
             <div class="cert-date">December 202</div>
             <p class="cert-description">
@@ -995,7 +1005,12 @@
               <span class="skill-tag">Neural Networks</span>
             </div>
             <div class="cert-actions">
-              <a href="https://drive.google.com/file/d/1ihIgIP1U_xvwGXY--RmLWrYoW1u5bjH4/view?usp=sharing" class="cert-button"  id="hoverArea">View Certificate</a>
+              <a
+                href="https://drive.google.com/file/d/1ihIgIP1U_xvwGXY--RmLWrYoW1u5bjH4/view?usp=sharing"
+                class="cert-button"
+                id="hoverArea"
+                >View Certificate</a
+              >
             </div>
           </div>
 
@@ -1005,7 +1020,9 @@
             <h3 class="cert-title">DevOps for Web Devlopment</h3>
             <div class="cert-issuer">AWS community Builders</div>
             <div class="cert-date">October 2024</div>
-            <p class="cert-description">Foundation and Fundamental about DevOps and how can we use in the Websitw Devlopment 
+            <p class="cert-description">
+              Foundation and Fundamental about DevOps and how can we use in the
+              Websitw Devlopment
             </p>
             <div class="cert-skills">
               <span class="skill-tag">Basics Of DevOps</span>
@@ -1014,7 +1031,12 @@
               <span class="skill-tag">Git Action</span>
             </div>
             <div class="cert-actions">
-              <a href="https://drive.google.com/file/d/1LX1CPZAT5MJpvslATnZQZEShKYg9mb60/view?usp=sharing" class="cert-button"  id="hoverArea">View Certificate</a>
+              <a
+                href="https://drive.google.com/file/d/1LX1CPZAT5MJpvslATnZQZEShKYg9mb60/view?usp=sharing"
+                class="cert-button"
+                id="hoverArea"
+                >View Certificate</a
+              >
             </div>
           </div>
 
@@ -1024,15 +1046,20 @@
             <h3 class="cert-title">Project Excellence Mastering</h3>
             <div class="cert-issuer">Excelr</div>
             <div class="cert-date">Augest 2024</div>
-            <p class="cert-description">A Deep understanding about te Project and It's Handling 
+            <p class="cert-description">
+              A Deep understanding about te Project and It's Handling
             </p>
             <div class="cert-skills">
               <span class="skill-tag">Team Work</span>
               <span class="skill-tag">Task Distribution</span>
             </div>
             <div class="cert-actions">
-              <a href="https://drive.google.com/file/d/1_LPG0pPX_d4ydBLrJOkLl3V7NTex_rhK/view?usp=sharing" class="cert-button"  id="hoverArea">View Certificate</a>
-              
+              <a
+                href="https://drive.google.com/file/d/1_LPG0pPX_d4ydBLrJOkLl3V7NTex_rhK/view?usp=sharing"
+                class="cert-button"
+                id="hoverArea"
+                >View Certificate</a
+              >
             </div>
           </div>
 
@@ -1042,7 +1069,9 @@
             <h3 class="cert-title">Git, GitHub</h3>
             <div class="cert-issuer">Udemy</div>
             <div class="cert-date">Janaury 2024</div>
-            <p class="cert-description">All about the Git and GitHub and how to use Version control for upscaling
+            <p class="cert-description">
+              All about the Git and GitHub and how to use Version control for
+              upscaling
             </p>
             <div class="cert-skills">
               <span class="skill-tag">Terminal</span>
@@ -1050,10 +1079,19 @@
               <span class="skill-tag">Code Syncronisation</span>
             </div>
             <div class="cert-actions">
-              <a href="https://drive.google.com/file/d/19OHWFfDBvBz4e8s_KRTvrqC1t3BTjrcq/view?usp=sharing" class="cert-button"  id="hoverArea">View Certificate</a>
+              <a
+                href="https://drive.google.com/file/d/19OHWFfDBvBz4e8s_KRTvrqC1t3BTjrcq/view?usp=sharing"
+                class="cert-button"
+                id="hoverArea"
+                >View Certificate</a
+              >
             </div>
           </div>
+        </div>
 
+        <div class="projects-actions">
+          <a href="certificate.html" class="cert-button">See All</a>
+        </div>
 
         <!-- Certificate Stats -->
         <div class="cert-stats">
@@ -1113,7 +1151,7 @@
               duration: 0.5,
               ease: "power2.out",
             },
-            "-=0.3"
+            "-=0.3",
           );
 
         // Certificate cards animation
@@ -1322,7 +1360,6 @@
       });
     </script>
     <section class="github-section" id="github">
-      
       <div class="github-container">
         <h2 class="github-heading">GitHub Activity</h2>
         <div class="github-graph-wrapper">
@@ -1333,7 +1370,6 @@
           />
         </div>
       </div>
-      
     </section>
 
     <script>
@@ -1382,7 +1418,6 @@
             </p>
 
             <div class="social-links">
-              
               <a
                 href="https://github.com/Alid3456778"
                 class="social-link"
@@ -1399,14 +1434,7 @@
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <!-- <a
-                href="https://twitter.com/yourusername"
-                class="social-link"
-                target="_blank"
-                title="Twitter"
-              >
-                <i class="fab fa-twitter"></i>
-              </a> -->
+
               <a
                 href="https://instagram.com/alid_7_2"
                 class="social-link"
@@ -1415,22 +1443,6 @@
               >
                 <i class="fab fa-instagram"></i>
               </a>
-              <!-- <a
-                href="https://dribbble.com/yourusername"
-                class="social-link"
-                target="_blank"
-                title="Dribbble"
-              >
-                <i class="fab fa-dribbble"></i>
-              </a>
-              <a
-                href="https://behance.net/yourusername"
-                class="social-link"
-                target="_blank"
-                title="Behance"
-              >
-                <i class="fab fa-behance"></i>
-              </a> -->
             </div>
 
             <div class="contact-details">
@@ -1450,8 +1462,12 @@
           </div>
 
           <div class="contact-form-container">
-            <form id="contactForm" action="https://formspree.io/f/meokygja"
-  method="POST" class="contact-form">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/meokygja"
+              method="POST"
+              class="contact-form"
+            >
               <div class="form-group">
                 <label for="name">Full Name</label>
                 <input
@@ -1598,44 +1614,44 @@
       //   });
 
       document
-    .getElementById("contactForm")
-    .addEventListener("submit", async function (e) {
-      e.preventDefault();
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-      const submitBtn = this.querySelector(".submit-btn");
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = "Sending...";
-      submitBtn.disabled = true;
+          const submitBtn = this.querySelector(".submit-btn");
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = "Sending...";
+          submitBtn.disabled = true;
 
-      // Gather form data
-      const formData = new FormData(this);
+          // Gather form data
+          const formData = new FormData(this);
 
-      try {
-        // Send to Formspree
-        const response = await fetch(this.action, {
-          method: this.method,
-          body: formData,
-          headers: { 'Accept': 'application/json' }
+          try {
+            // Send to Formspree
+            const response = await fetch(this.action, {
+              method: this.method,
+              body: formData,
+              headers: { Accept: "application/json" },
+            });
+
+            if (!response.ok) throw new Error("Network response was not ok");
+
+            // Show success UI
+            document.getElementById("successMessage").style.display = "block";
+            this.reset();
+          } catch (err) {
+            alert("Oops! There was a problem submitting your form.");
+            console.error(err);
+          } finally {
+            // Restore button
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            // Hide success after 5s
+            setTimeout(() => {
+              document.getElementById("successMessage").style.display = "none";
+            }, 5000);
+          }
         });
-
-        if (!response.ok) throw new Error("Network response was not ok");
-
-        // Show success UI
-        document.getElementById("successMessage").style.display = "block";
-        this.reset();
-      } catch (err) {
-        alert("Oops! There was a problem submitting your form.");
-        console.error(err);
-      } finally {
-        // Restore button
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        // Hide success after 5s
-        setTimeout(() => {
-          document.getElementById("successMessage").style.display = "none";
-        }, 5000);
-      }
-    });
 
       // Add interactive hover effects
       document.querySelectorAll(".social-link").forEach((link) => {
@@ -1700,56 +1716,5 @@
         repeat: -1,
       });
     </script>
-
-
-
-
-
-<!-- <script>
-  (function() {
-    const circle = document.getElementById('circleCursor');
-    const hoverArea = document.getElementById('hoverArea');
-
-    // Current position of circle
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-
-    // Position of the circle used for smooth animation
-    let circleX = mouseX;
-    let circleY = mouseY;
-
-    // Speed of the smoothing (0.1 is slower, 1 is no smoothing)
-    const smoothing = 0.15;
-
-    // Listen to mousemove globally
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    // Animation loop to ease circle's position
-    function animate() {
-      circleX += (mouseX - circleX) * smoothing;
-      circleY += (mouseY - circleY) * smoothing;
-
-      circle.style.transform = `translate(${circleX}px, ${circleY}px) translate(-50%, -50%) scale(${circle.classList.contains('expand') ? 1 : 1})`;
-      requestAnimationFrame(animate);
-    }
-    animate();
-
-    // Expand circle on hoverArea mouse enter
-    hoverArea.addEventListener('mouseenter', () => {
-
-      circle.classList.add('expand');
-      circle.innerHTML += 'View';
-    });
-
-    // Shrink back on mouse leave
-    hoverArea.addEventListener('mouseleave', () => {
-      circle.classList.remove('expand');
-      circle.innerHTML = '';
-    });
-  })();
-</script> -->
   </body>
 </html>

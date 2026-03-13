@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Certificates | ALidShaikh's</title>
+    <meta
+      name="description"
+      content="All certificates by ALid Shaikh, presented in the same portfolio style."
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button
+      class="hamburger-btn"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="menu"
+    >
+      <span class="hamburger-icon"></span>
+    </button>
+
+    <aside class="menu-overlay" id="menu" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="menu-container">
+        <nav>
+          <ul>
+            <li tabindex="0"><a href="index.html#home" onclick="closeMenu()">HOME</a></li>
+            <li tabindex="0"><a href="index.html#aboutus" onclick="closeMenu()">ABOUT</a></li>
+            <li tabindex="0"><a href="project.html" onclick="closeMenu()">PROJECT</a></li>
+            <li tabindex="0"><a href="#certificate" onclick="closeMenu()">CERTIFICATE</a></li>
+            <li tabindex="0"><a href="index.html#skill" onclick="closeMenu()">SKILL</a></li>
+            <li tabindex="0"><a href="index.html#contactus" onclick="closeMenu()">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <div>EMAIL ADDRESS</div>
+          <div class="email">alidshaikh05@gmail.com</div>
+        </div>
+        <button class="close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <main >
+      <!-- <section class="projects-page-intro">
+        <p class="projects-page-kicker">Portfolio</p>
+        <h1 class="projects-page-heading">All Certificates</h1>
+        <p class="projects-page-text">
+          A complete view of my certifications, using the same visual language as the main portfolio.
+        </p>
+        <div class="projects-actions">
+          <a href="index.html" class="cert-button">Back Home</a>
+        </div>
+      </section> -->
+
+      <section class="certificates-section" id="certificate">
+        <div class="cert-bg-elements">
+          <div class="floating-shape shape-1"></div>
+          <div class="floating-shape shape-2"></div>
+          <div class="floating-shape shape-3"></div>
+        </div>
+
+        <div class="certificates-container">
+          <h2 class="certificates-title">
+            <span class="char">C</span>
+            <span class="char">E</span>
+            <span class="char">R</span>
+            <span class="char">T</span>
+            <span class="char">I</span>
+            <span class="char">F</span>
+            <span class="char">I</span>
+            <span class="char">C</span>
+            <span class="char">A</span>
+            <span class="char">T</span>
+            <span class="char">E</span>
+            <span class="char">S</span>
+          </h2>
+          <div class="certificates-grid" id="certificatesList"></div>
+
+          <div class="cert-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Total Certificates</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Specializations</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger-btn");
+      const menuOverlay = document.querySelector(".menu-overlay");
+      const closeButton = document.querySelector(".close-btn");
+
+      function openMenu() {
+        menuOverlay.classList.add("active");
+        menuOverlay.setAttribute("aria-hidden", "false");
+        hamburgerButton.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+        const firstLink = menuOverlay.querySelector("nav ul li");
+        firstLink?.focus();
+      }
+
+      function closeMenu() {
+        menuOverlay.classList.remove("active");
+        menuOverlay.setAttribute("aria-hidden", "true");
+        hamburgerButton.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+        hamburgerButton.focus();
+      }
+
+      hamburgerButton.addEventListener("click", () => {
+        if (menuOverlay.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      closeButton.addEventListener("click", closeMenu);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && menuOverlay.classList.contains("active")) {
+          closeMenu();
+        }
+      });
+
+      menuOverlay.addEventListener("click", (e) => {
+        if (e.target === menuOverlay) {
+          closeMenu();
+        }
+      });
+
+      function renderCertificates(certificates) {
+        const certificatesList = document.getElementById("certificatesList");
+        certificatesList.innerHTML = certificates
+          .map(
+            (certificate) => `
+              <div class="certificate-card" data-cert="${certificate.id}">
+                <div class="cert-icon"></div>
+                <h3 class="cert-title">${certificate.title}</h3>
+                <div class="cert-issuer">${certificate.issuer}</div>
+                <div class="cert-date">${certificate.date}</div>
+                <p class="cert-description">${certificate.description}</p>
+                <div class="cert-skills">
+                  ${certificate.skills
+                    .map((skill) => `<span class="skill-tag">${skill}</span>`)
+                    .join("")}
+                </div>
+                <div class="cert-actions">
+                  <a href="${certificate.link}" class="cert-button">View Certificate</a>
+                </div>
+              </div>
+            `
+          )
+          .join("");
+      }
+
+      function initCertificateAnimations() {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: ".certificates-title",
+              start: "top 80%",
+              end: "bottom 20%",
+              toggleActions: "play none none reverse",
+            },
+          })
+          .to(".certificates-title .char", {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power3.out",
+            stagger: 0.05,
+          });
+
+        gsap.utils.toArray(".certificate-card").forEach((card, index) => {
+          gsap.to(card, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            delay: index * 0.08,
+            scrollTrigger: {
+              trigger: card,
+              start: "top 85%",
+              toggleActions: "play none none reverse",
+            },
+          });
+        });
+
+        gsap.utils.toArray(".stat-item").forEach((item, index) => {
+          gsap.to(item, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            delay: index * 0.2,
+            scrollTrigger: {
+              trigger: ".cert-stats",
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            },
+          });
+        });
+
+        ScrollTrigger.create({
+          trigger: ".cert-stats",
+          start: "top 80%",
+          onEnter: () => {
+            document.querySelectorAll(".stat-number").forEach((counter) => {
+              const target = parseInt(counter.getAttribute("data-target"), 10);
+              const increment = target / 60;
+              let current = 0;
+
+              const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                  counter.textContent = Math.ceil(current);
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.textContent = target;
+                }
+              };
+
+              updateCounter();
+            });
+          },
+        });
+      }
+
+      async function initCertificatesPage() {
+        try {
+          const response = await fetch("./certificate.json");
+          if (!response.ok) {
+            throw new Error("Failed to load certificate data");
+          }
+
+          const certificates = await response.json();
+          renderCertificates(certificates);
+          document
+            .querySelector(".stat-number")
+            .setAttribute("data-target", String(certificates.length));
+          gsap.registerPlugin(ScrollTrigger);
+          initCertificateAnimations();
+        } catch (error) {
+          document.getElementById("certificatesList").innerHTML =
+            '<p class="projects-page-text">Unable to load certificates right now. Use GitHub Pages, Live Server, or another hosted server.</p>';
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        initCertificatesPage();
+      });
+    </script>
+  </body>
+</html>
