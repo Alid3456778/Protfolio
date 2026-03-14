@@ -1,4 +1,11 @@
-[
+[ {
+    "title": "Task Manager (DevOps Practices)",
+    "image": "./Image/imprttant/taskmanager.jpg",
+    "alt": "Task Manager (DevOps Practices)",
+    "description": "In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.",
+    "tech": ["CI CD (Git Action)", "Docker", "Deployment", "Node", "Expres"],
+    "link": "https://task-manager-devops-7e1j.onrender.com/"
+  },
   {
     "title": "Spam Detection MLOps Pipeline",
     "image": "./Image/imprttant/Project1.png",
@@ -16,9 +23,9 @@
     "link": "https://propperty-1.onrender.com"
   },
   {
-    "title": "Spam Detection",
+    "title": "NEWS Web",
     "image": "./Image/imprttant/Screenshot 2024-12-13 171722--11-1.png",
-    "alt": "Spam Detection",
+    "alt": "NEWS Web",
     "description": "*A Wesite which is use to Show latest NEWS and Headline of now a day's . *It is create with PHP and API's",
     "tech": ["PHP", "HTML", "CS", "API"],
     "link": "http://rangoko.42web.io/a/index.html"
@@ -40,11 +47,11 @@
     "link": "https://alid3456778.github.io/HandSign/"
   },
   {
-    "title": "Task Manager (DevOps Practices)",
-    "image": "./Image/imprttant/taskmanager.jpg",
-    "alt": "Task Manager (DevOps Practices)",
-    "description": "In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.",
-    "tech": ["CI CD (Git Action)", "Docker", "Deployment", "Node", "Expres"],
-    "link": "https://task-manager-devops-7e1j.onrender.com/"
+    "title": "Job Finder",
+    "image": "./Image/imprttant/job_finder.png",
+    "alt": "Job Finding",
+    "description": "Devlop an Platform where user can find the Job posting from the Linkdin , Intershalla and Indeed.com you just have to put the Intreseted Role , Duration of Time and Location .This project give me an understanding in the Scrapping and working with the python files",
+    "tech": ["HTMl", "Pyhton", "CSS", "JS"],
+    "link": "https://jobfinding-kvbr.onrender.com/"
   }
 ]
