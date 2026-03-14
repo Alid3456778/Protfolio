@@ -1,10 +1,11 @@
-[ {
-    "title": "Task Manager (DevOps Practices)",
-    "image": "./Image/imprttant/taskmanager.jpg",
-    "alt": "Task Manager (DevOps Practices)",
-    "description": "In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.",
-    "tech": ["CI CD (Git Action)", "Docker", "Deployment", "Node", "Expres"],
-    "link": "https://task-manager-devops-7e1j.onrender.com/"
+[
+  {
+    "title": "Interactive Spam Detection AI System",
+    "image": "./Image/imprttant/applispam.png",
+    "alt": "End-to-End Spam Detection MLOps Pipeline",
+    "description": "Built an AI system capable of training and evaluating spam detection models.Implemented model accuracy tracking and evaluation dashboards.Added data drift monitoring to detect changes in message distributions.Enabled dynamic model retraining with updated datasets.",
+    "tech": ["Python", "MLflow", "Machine Learning"],
+    "link": "https://spam-ai-golh.onrender.com/"
   },
   {
     "title": "Spam Detection MLOps Pipeline",
@@ -14,6 +15,14 @@
     "tech": ["FastAPI", "MLflow", "DVC", "Python", "Scikit-Learn"],
     "link": "https://spam-mlops-project.onrender.com/docs"
   },
+   {
+    "title": "Task Manager (DevOps Practices)",
+    "image": "./Image/imprttant/taskmanager.jpg",
+    "alt": "Task Manager (DevOps Practices)",
+    "description": "In this project, I built a Task Manager web application following DevOps best practices. The app allows users to create, update, and track tasks efficiently. It features automated deployment pipelines, containerization with Docker, and CI/CD integration using GitHub Actions. Technologies used include Node.js, Express.js, MongoDB, and Docker.",
+    "tech": ["CI CD (Git Action)", "Docker", "Deployment", "Node", "Expres"],
+    "link": "https://task-manager-devops-7e1j.onrender.com/"
+  },
   {
     "title": "Tours & Travelling Managment System",
     "image": "./Image/imprttant/Screenshot 2024-12-13 171036-11.png",
@@ -21,6 +30,14 @@
     "description": "*A Website where people can book Tours Package , The packages is save and can be modified as per need . *Created with Node , Express , Mongo",
     "tech": ["EJS", "Node.js", "MongoDB"],
     "link": "https://propperty-1.onrender.com"
+  },
+  {
+    "title": "Job Finder",
+    "image": "./Image/imprttant/job_finder.png",
+    "alt": "Job Finding",
+    "description": "Devlop an Platform where user can find the Job posting from the Linkdin , Intershalla and Indeed.com you just have to put the Intreseted Role , Duration of Time and Location .This project give me an understanding in the Scrapping and working with the python files",
+    "tech": ["HTMl", "Pyhton", "CSS", "JS"],
+    "link": "https://jobfinding-kvbr.onrender.com/"
   },
   {
     "title": "NEWS Web",
@@ -45,13 +62,5 @@
     "description": "I sees the Hand Guesture and Show's which sign has been showing to the screen ,It uses the MediaPipe Library to detects the hand sign , It gives me an good under standing of how to use Libraries and adapt the Chnage's",
     "tech": ["HTMl", "MediaPipe Library", "CSS", "JS"],
     "link": "https://alid3456778.github.io/HandSign/"
-  },
-  {
-    "title": "Job Finder",
-    "image": "./Image/imprttant/job_finder.png",
-    "alt": "Job Finding",
-    "description": "Devlop an Platform where user can find the Job posting from the Linkdin , Intershalla and Indeed.com you just have to put the Intreseted Role , Duration of Time and Location .This project give me an understanding in the Scrapping and working with the python files",
-    "tech": ["HTMl", "Pyhton", "CSS", "JS"],
-    "link": "https://jobfinding-kvbr.onrender.com/"
   }
 ]
