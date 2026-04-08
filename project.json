@@ -24,6 +24,22 @@
     "link": "https://task-manager-devops-7e1j.onrender.com/"
   },
   {
+    "title":"Millinor Clothing 3D E-commerce Website",
+    "image":"./Image/imprttant/MillinorClothing.png",
+    "alt":"Millinor Clothing 3D E-commerce Website",
+    "description":"Created a 3D e-commerce website for Millinor Clothing using Three.js. The site features interactive 3D product models, allowing users to view clothing items from all angles. Implemented a Futrestic interface with smooth navigation and responsive design. Technologies used include Three.js, HTML, CSS, and JavaScript.",
+    "tech":["Three.js", "HTML", "CSS", "JavaScript","Mongo Atlas"],
+    "link":"https://millionerclothing.onrender.com/"
+  },
+  {
+    "title":"Level Devil Multiplayer Game",
+    "image":"./Image/imprttant/LevelDevil.png",
+    "alt":"Level Devil Multiplayer Game",
+    "description":"Developed a multiplayer game called Level Devil using Socket.io for real-time communication. The game features multiple levels of increasing difficulty, where players compete against each other to reach the top and Play with their friends . Implemented a leaderboard system to track player scores and rankings. Technologies used include Node.js, Socket.io, HTML, CSS, and JavaScript.",
+    "tech":["Socket.io", "Node.js", "HTML", "CSS", "JavaScript","Mongo Atlas"],
+    "link":"https://level-devil-b7rf.onrender.com/"
+  },
+  {
     "title": "Tours & Travelling Managment System",
     "image": "./Image/imprttant/Screenshot 2024-12-13 171036-11.png",
     "alt": "Tours & Travelling Managment System",
@@ -40,14 +56,6 @@
     "link": "https://jobfinding-kvbr.onrender.com/"
   },
   {
-    "title": "NEWS Web",
-    "image": "./Image/imprttant/Screenshot 2024-12-13 171722--11-1.png",
-    "alt": "NEWS Web",
-    "description": "*A Wesite which is use to Show latest NEWS and Headline of now a day's . *It is create with PHP and API's",
-    "tech": ["PHP", "HTML", "CS", "API"],
-    "link": "http://rangoko.42web.io/a/index.html"
-  },
-  {
     "title": "Parking management Systen",
     "image": "./Image/imprttant/parking.jpg",
     "alt": "Parking management Systen",
@@ -62,5 +70,12 @@
     "description": "I sees the Hand Guesture and Show's which sign has been showing to the screen ,It uses the MediaPipe Library to detects the hand sign , It gives me an good under standing of how to use Libraries and adapt the Chnage's",
     "tech": ["HTMl", "MediaPipe Library", "CSS", "JS"],
     "link": "https://alid3456778.github.io/HandSign/"
+  },  {
+    "title": "NEWS Web",
+    "image": "./Image/imprttant/Screenshot 2024-12-13 171722--11-1.png",
+    "alt": "NEWS Web",
+    "description": "*A Wesite which is use to Show latest NEWS and Headline of now a day's . *It is create with PHP and API's",
+    "tech": ["PHP", "HTML", "CS", "API"],
+    "link": "http://rangoko.42web.io/a/index.html"
   }
 ]
